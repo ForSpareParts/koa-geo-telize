@@ -1,0 +1,16 @@
+{
+  "name": "koa-geoip",
+  "version": "1.0.0",
+  "description": "Koa middleware to geolocate requests by IP address.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "koa",
+    "middleware",
+    "geoip"
+  ],
+  "author": "David Jackson",
+  "license": "ISC"
+}
