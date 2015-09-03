@@ -12,5 +12,16 @@
     "geoip"
   ],
   "author": "David Jackson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "koa": "^1.0.0",
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "replay": "^2.0.6",
+    "supertest": "^1.1.0",
+    "supertest-as-promised": "^2.0.2"
+  }
 }

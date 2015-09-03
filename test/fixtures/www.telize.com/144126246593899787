@@ -1,0 +1,13 @@
+GET /geoip/216.58.216.196
+host: www.telize.com
+
+HTTP/1.1 200 OK
+server: nginx/1.6.2
+date: Thu, 03 Sep 2015 06:41:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 356
+connection: close
+cache-control: no-cache
+access-control-allow-origin: *
+
+{"longitude":-122.0574,"latitude":37.4192,"asn":"AS15169","offset":"-7","ip":"216.58.216.196","area_code":"0","continent_code":"NA","dma_code":"0","city":"Mountain View","timezone":"America\/Los_Angeles","region":"California","country_code":"US","isp":"Google Inc.","postal_code":"94043","country":"United States","country_code3":"USA","region_code":"CA"}
