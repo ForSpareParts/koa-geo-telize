@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Koa middleware to geolocate requests using the Telize API.",
   "main": "index.js",
+  "repository": "https://github.com/ForSpareParts/koa-geo-telize",
   "scripts": {
     "test": "mocha"
   },
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "chai": "^3.2.0",
+    "mocha": "^2.3.0",
     "replay": "^2.0.6",
     "supertest": "^1.1.0",
     "supertest-as-promised": "^2.0.2"

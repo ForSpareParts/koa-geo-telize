@@ -33,14 +33,18 @@ Usage
 ```
 
 
-Self-Hosting
-------------
+Options
+-------
 
-The Telize API is not rate-limited, but there are no guarantees as to its
-availability. If you'd prefer to [self-host the API](https://github.com/fcambus/telize),
-you can simply pass the URL of your API instance as the `serviceURL` parameter
-of an options hash, i.e.:
+You can pass an options hash as the sole argument to `koa-geo-telize` to
+configure the middleware. Available options include:
 
-```javascript
-    require('koa-geo-telize')({serviceURL: 'http://my.telize.instance'});
-```
+*   *pathRegexWhitelist* (default: `undefined`): By default, the middleware will
+    run against all requests, but if this option is passed, it will only run for
+    requests whose path matches a regex in the whitelist. Expects an Array of
+    regexs.
+
+*   *serviceURL* (default: `http://www.telize.com/geoip`): The path to the
+    Telize API that should be used for geolocation. The live API is not
+    rate-limited, but there are no guarantees as to its availability, so you can
+    [self-host](https://github.com/fcambus/telize) it if you'd prefer.
