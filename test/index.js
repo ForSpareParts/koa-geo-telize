@@ -17,14 +17,13 @@ describe('the geoip middleware', function() {
     app.use(geoip());
     app.use(function *() {
       this.response.type = 'application/json';
-      if (this.state.geo) {
-        this.response.body = this.state.geo;
-        return;
+
+      if (this.state.geo.error) {
+        this.response.body = this.state.geo.error;
+        return
       }
 
-      this.response.body = {error: 'Geolocation unsuccessful.'};
-
-      this.response.type = 'application/json';
+      this.response.body = this.state.geo;
     });
   });
 
@@ -39,4 +38,18 @@ describe('the geoip middleware', function() {
       assert.strictEqual(res.body.region, 'California');
     });
   });
+
+  it('stores an error if lookup is unsuccessful', function () {
+    return request(app.listen())
+    .get('/')
+    .set('X-Forwarded-For', 'not-a-valid-ip')
+    .expect(200)
+    .then((res) => {
+      assert.strictEqual(res.body.statusCode, 400);
+      assert.strictEqual(
+        res.body.message,
+        'Input string is not a valid IP address');
+    });
+  });
+
 });

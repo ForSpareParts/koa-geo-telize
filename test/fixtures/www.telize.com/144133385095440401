@@ -1,0 +1,12 @@
+GET /geoip/not-a-valid-ip
+host: www.telize.com
+
+HTTP/1.1 400 Bad Request
+server: nginx/1.6.2
+date: Fri, 04 Sep 2015 02:30:49 GMT
+content-type: application/json; charset=utf-8
+content-length: 64
+connection: close
+cache-control: no-cache
+
+{"code":401,"message":"Input string is not a valid IP address"}
