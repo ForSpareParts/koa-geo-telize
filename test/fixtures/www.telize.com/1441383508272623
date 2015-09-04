@@ -1,0 +1,18 @@
+GET /foobar/216.58.216.196
+accept: application/json
+host: www.telize.com
+
+HTTP/1.1 404 Not Found
+server: nginx/1.6.2
+date: Fri, 04 Sep 2015 16:18:26 GMT
+content-type: text/html
+content-length: 168
+connection: close
+
+<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>

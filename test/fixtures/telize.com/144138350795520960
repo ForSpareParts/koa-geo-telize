@@ -1,0 +1,19 @@
+GET /foobar/216.58.216.196
+host: telize.com
+accept: application/json
+
+HTTP/1.1 301 Moved Permanently
+server: nginx/1.6.2
+date: Fri, 04 Sep 2015 16:18:26 GMT
+content-type: text/html
+content-length: 184
+connection: close
+location: http://www.telize.com/foobar/216.58.216.196
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
