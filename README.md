@@ -12,10 +12,10 @@ information about the data format and information available, refer to the
 If the API request is unsuccessful for any reason, the middleware will populate
 `state.geo.error` with an object of the following format:
 
-{
-    "statusCode": 400, //the HTTP status code of the failed request
-    "message": "Invalid IP" //the error message, if any, from Telize
-}
+    {
+        "statusCode": 400, //the HTTP status code of the failed request
+        "message": "Invalid IP" //the error message, if any, from Telize
+    }
 
 
 Usage
