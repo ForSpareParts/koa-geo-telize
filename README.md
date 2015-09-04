@@ -1,4 +1,4 @@
-koa-geoip
+koa-geo-telize
 =========
 
 A Koa middleware to retrieve gelocation information for a request based on the
@@ -23,7 +23,7 @@ Usage
 
     var app = require('koa')();
 
-    app.use(require('koa-geoip')());
+    app.use(require('koa-geo-telize')());
 
     app.use(function *() {
       console.log(this.state.geo); 
@@ -39,4 +39,4 @@ availability. If you'd prefer to [self-host the API](https://github.com/fcambus/
 you can simply pass the URL of your API instance as the `serviceURL` parameter
 of an options hash, i.e.:
 
-    require('koa-geoip')({serviceURL: 'http://my.telize.instance'});
+    require('koa-geo-telize')({serviceURL: 'http://my.telize.instance'});

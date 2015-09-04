@@ -1,7 +1,7 @@
 {
-  "name": "koa-geoip",
+  "name": "koa-geo-telize",
   "version": "1.0.0",
-  "description": "Koa middleware to geolocate requests by IP address.",
+  "description": "Koa middleware to geolocate requests using the Telize API.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -9,7 +9,8 @@
   "keywords": [
     "koa",
     "middleware",
-    "geoip"
+    "geoip",
+    "telize"
   ],
   "author": "David Jackson",
   "license": "ISC",
