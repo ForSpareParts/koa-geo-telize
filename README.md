@@ -12,15 +12,17 @@ information about the data format and information available, refer to the
 If the API request is unsuccessful for any reason, the middleware will populate
 `state.geo.error` with an object of the following format:
 
+```javascript
     {
         "statusCode": 400, //the HTTP status code of the failed request
         "message": "Invalid IP" //the error message, if any, from Telize
     }
-
+```
 
 Usage
 -----
 
+```javascript
     var app = require('koa')();
 
     app.use(require('koa-geo-telize')());
@@ -28,7 +30,7 @@ Usage
     app.use(function *() {
       console.log(this.state.geo); 
     });
-
+```
 
 
 Self-Hosting
@@ -39,4 +41,6 @@ availability. If you'd prefer to [self-host the API](https://github.com/fcambus/
 you can simply pass the URL of your API instance as the `serviceURL` parameter
 of an options hash, i.e.:
 
+```javascript
     require('koa-geo-telize')({serviceURL: 'http://my.telize.instance'});
+```
